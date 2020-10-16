@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty care experience and ranking</title>
+    <meta name="keywords" content="美妝心得,保養心得">
+    <meta name="description"
+        content="專業提供最新美妝保養心得">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- ico -->
+    <link rel="shortcut icon" href="assets/images/seoimg/favicon.ico">
+    <link rel='apple-touch-icon' , href='assets/images/seoimg/touch-icon-iphone.png'>
+    <link rel='apple-touch-icon' , sizes='120x120' , href='assets/images/seoimg/touch-icon-ipad.png'>
+    <link rel='apple-touch-icon' , sizes='152x152' , href='assets/images/seoimg/touch-icon-ipad-retina.png'>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+</head>
+<style></style>
+<script>
+	const array1 = ['http://127.0.0.1:880/index.html']
+	let host= window.location.hostname;
+	console.log('host:',host)
+	var skin_tag = (array1.includes(host)) ? true : false
+	console.log('>',skin_tag)
+</script>
+
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="nav-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand mr-lg-auto" href="#"><img src="../assets/images/logo.svg" alt=""></a>
+                    <!-- 搜尋 -->
+                    <div class="search-wrap">
+                        <select class="search">
+                            <option selected="selected"></option>
+                        </select>
+                    </div>
+                    <div class="service">
+                        <a href="https://tawk.to/chat/5a5ece2fd7591465c706d1fd/default" target="_blank">
+                            <span class="iconfont iconservice-o text-white"></span>
+                        </a>
+                    </div>  
+                </nav>
+            </div>
+        </header>
+        <div class="wrap-container">
+            <section class="banner-wrap container-fluid">
+                <div class="row no-gutters">
+                    <div class="order-lg-1 order-0 bnr-wrap col-lg-5">
+                        <div class="swiper-container" id="banner">
+                            <div class="swiper-wrapper" id="owl-demo">
+                                <!-- banner img -->
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="pulse-button d-lg-none">
+                        <div class="collapse-ad">展開廣告</div>
+                        <div class="arrow">
+                            <span class="iconfont iconarrowdown chevron-down"></span>
+                        </div>
+                    </div>
+                    <div class="order-lg-0 order-1 bnr-wrap ad col-lg display-none">
+                        <div class="bnr-item-wrap row no-gutters firstAd">
+                            <!-- b區1~6 小廣告圖 -->
+                        </div>
+                    </div>
+                    <div class="order-lg-2 order-2 bnr-wrap ad col-lg display-none">
+                        <div class="bnr-item-wrap row no-gutters subAd">
+                            <!-- b區7~12 小廣告圖 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 下方內容 -->
+            <section class="content-wrap container">
+                <div class="row no-gutters">
+                    <div class="order-lg-0 order-1 col-lg-2 col-md-12 d-flex flex-column-reverse flex-lg-column">
+                        <div class="popular-wrap">
+                            <div class="popular-title">熱門推薦</div>
+                            <div class="popular-list">
+                                <!-- 熱門推薦列表 -->
+                            </div>
+                        </div>
+                        <div class="e-ad-wrap ad">
+                            <div class="e-ad-item d-none d-lg-block">
+                                <a href="http://fa1246.iwinbet.net/platform-maintenance" target="_blank"><img
+                                        src="../assets/images/e/bigad03.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-lg-1 order-2 col-lg-8 col-md-12">
+                        <div class="tab-wrap">
+                            <div class="nav-wrap swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="nav-item swiper-slide"
+                                        onclick="initPage('maintenance');initPopular('maintenancePopular')"><a href="#0">基礎保養</a>
+                                    </div>
+                                    <div class="nav-item swiper-slide"
+                                        onclick="initPage('skin');initPopular('skinPopular')"><a href="#1">進階護膚</a>
+                                    </div>
+                                    <div class="nav-item swiper-slide" onclick="initPage('sunscreen');initPopular()"><a
+                                            href="#2">防曬</a>
+                                    </div>
+                                    <div class="nav-item swiper-slide" onclick="initPage('basicMakeup');initPopular()"><a
+                                            href="#3">底妝</a>
+                                    </div>
+                                    <div class="nav-item swiper-slide" onclick="initPage('mackeup');initPopular()">
+                                        <a href="#4">彩妝</a>
+                                    </div>
+                                    <!-- <div class="nav-item swiper-slide" onclick="initPage('forum');initPopular()"><a
+                                            href="#5">報牌論壇</a>
+                                    </div> -->
+                                    <!-- <div class="nav-item swiper-slide" onclick="initPage('video');initPopular()"><a
+                                            href="#6">影視娛樂</a>
+                                    </div> -->
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="tab-item">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <!-- 各類別tab -->
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <!-- 各大系統內容 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-lg-2 order-0 col-lg-2 col-md-12">
+                        <div class="e-ad-wrap ad display-none">
+                            <div class="e-ad-wrap ad display-none">
+                                <div class="e-ad-item">
+                                    <a href="http://www.bs688.net/" target="_blank"><img
+                                            src="../assets/images/e/bigad01.png" alt=""></a>
+                                </div>
+                                <div class="e-ad-item">
+                                    <a href="http://fa1246.iwinbet.net/platform-maintenance/" target="_blank"><img
+                                            src="../assets/images/e/bigad02.png" alt=""></a>
+                                </div>
+                                <div class="e-ad-item d-block d-lg-none">
+                                    <a href="http://fa1246.iwinbet.net/platform-maintenance" target="_blank"><img
+                                            src="../assets/images/e/bigad03.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer pb-2 pt-2">
+                <div class="text-center footer-text">© 2020 Beauty care experience and ranking</div>
+            </footer>
+            <a href="#" class="toTop" title="GoTop" style="display: inline;"><span></span></a>
+</body>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/main.js"></script>
+</html>

@@ -1,0 +1,84 @@
+{
+  "bannerItem": [
+    {
+      "url": "#",
+      "img": "bn01.png"
+    },
+    {
+      "url": "#",
+      "img": "bn02.png"
+    },
+    {
+      "url": "#",
+      "img": "bn03.png"
+    },
+    {
+      "url": "#",
+      "img": "bn04.png"
+    }
+  ],
+  "adItem": [
+    {
+      "url": "#",
+      "img": "ad01.png"
+    },
+    {
+      "url": "#",
+      "img": "ad02.png"
+    },
+    {
+      "url": "#",
+      "img": "ad03.png"
+    },
+    {
+      "url": "#",
+      "img": "ad04.png"
+    },
+    {
+      "url": "#",
+      "img": "ad05.png",
+      "key": "display"
+    },
+    {
+      "url": "#",
+      "img": "ad06.png",
+      "key": "display"
+    }
+  ],
+  "adSubItem": [
+    {
+      "url": "#",
+      "img": "ad05.png",
+      "key": "display"
+    },
+    {
+      "url": "#",
+      "img": "ad06.png",
+      "key": "display"
+    },
+    {
+      "url": "#",
+      "img": "ad07.png"
+    },
+    {
+      "url": "#",
+      "img": "ad08.png"
+    },
+    {
+      "url": "#",
+      "img": "ad09.png"
+    },
+    {
+      "url": "#",
+      "img": "ad10.png"
+    },
+    {
+      "url": "#",
+      "img": "ad11.png"
+    },
+    {
+      "url": "#",
+      "img": "ad12.png"
+    }
+  ]
+}

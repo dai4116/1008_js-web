@@ -1,0 +1,611 @@
+body {
+    font-size: 16px !important;
+    font-family: 微軟正黑體;
+    background-color: #f3eeeb !important;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.iconfont {
+    font-size: 18px !important;
+}
+
+.header-nav {
+    background: none !important;
+}
+
+.banner {
+    padding: 5px;
+}
+
+.bnr-wrap {
+    margin-top: 20px;
+}
+
+.bnr-item img {
+    padding: 5px;
+}
+
+.content-wrap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.popular-wrap {
+    width: 100%;
+    margin-bottom: 12px;
+    background-color: #F8F8F8;
+}
+
+.popular-title {
+    height: 48px;
+    line-height: 48px;
+    background-color: #efb289;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.popular-list {
+    padding: 10px 0;
+    background-color: #F8F8F8;
+    box-shadow: 0 2px 4px 0 rgba(218, 218, 218, 0.50);
+}
+
+.popular-item {
+    background-color: #fff;
+    color: #efb289;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(218, 218, 218, 0.50);
+    padding: 10px;
+    height: 44px;
+    margin: 10px 14px;
+    transition: all .5s;
+}
+
+.popular-item a,
+.popular-item a:hover {
+    color: #efb289;
+}
+
+.popular-item:hover {
+    background-color: #fff3ec;
+}
+
+.item-title {
+    float: left;
+}
+
+.swiper-slide a:after {
+    content: '';
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+    width: 30%;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    margin: 0 auto;
+    transition: width ease .3s;
+    pointer-events: none;
+}
+
+.swiper-slide:hover a:after {
+    background-color: #efb289;
+    width: 100%
+}
+
+.popular-member-btn a,
+.popular-manage-btn a,
+.system-member-btn a,
+.system-manage-btn a,
+.popular-member-btn,
+.popular-manage-btn,
+.system-member-btn,
+.system-manage-btn {
+    float: right;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.popular-manage-btn,
+.system-manage-btn {
+    margin-right: 4px;
+}
+
+.popular-item:hover .popular-member-btn a,
+.system-item:hover .system-member-btn a,
+.popular-item:hover .popular-member-btn,
+.system-item:hover .system-member-btn {
+    background: #edaaaa;
+    color: #fff;
+}
+
+.popular-item:hover .popular-manage-btn a,
+.system-item:hover .system-manage-btn a,
+.popular-item:hover .popular-manage-btn,
+.system-item:hover .system-manage-btn {
+    background: #a9c5b9;
+    color: #fff;
+}
+
+.popular-member-btn a,
+.popular-manage-btn a {
+    color: #efb289;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    display: none;
+}
+
+.tab-wrap {
+    margin: 0 12px;
+}
+
+.tab-content {
+    background: #f8f8f8;
+}
+
+.tab-item {
+    background: #f8f8f8;
+}
+
+.nav-wrap {
+    background-image: linear-gradient(to top, #EBEBEB 0%, #ffffff 100%);
+    margin-top: 14px;
+}
+
+.nav-wrap .selecteBar {
+    border-bottom: 3px solid #efb289;
+    list-style-type: none;
+    text-align: center;
+    height: 43px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-wrap .selecteBar a {
+    color: #efb289;
+}
+
+.select2-container--default .select2-selection {
+    background-color: #fff3ea !important;
+}
+
+.nav-item {
+    color: #fff;
+    list-style-type: none;
+    text-align: center;
+    font-size: 18px;
+    height: 40px !important;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide:last-child {
+    border-right: none;
+}
+
+.navbar-item {
+    color: #fff;
+    list-style-type: none;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-item a {
+    color: #fff;
+}
+
+.navbar-item a:hover,
+.nav-item-active:hover {
+    color: #fff6f0;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.tab-content {
+    min-height: 392px !important;
+}
+
+.system-wrap {
+    margin: 0 14px;
+    background-color: #F8F8F8;
+}
+
+.system-list {
+    float: left;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.system-list:last-child {
+    padding-bottom: 1rem;
+}
+
+.system-item {
+    background-color: #fff;
+    color: #343635;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(218, 218, 218, 0.50);
+    padding: 10px;
+    margin: 5px;
+    width: 31.5%;
+    float: left;
+}
+
+.system-item:hover {
+    color: #5c5c5c;
+}
+
+.system-item a,
+.popular-item a {
+    display: flow-root;
+}
+
+.system-title {
+    margin: 10px 0 10px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.e-ad-item {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #efb289;
+}
+
+.footer-text {
+    color: #ffe3d0;
+}
+
+.toTop span {
+    position: fixed;
+    bottom: 70px;
+    right: 24px;
+    opacity: .9;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px #ffffff00 solid;
+    background: #efb28994;
+    box-shadow: 1px 1px 4px 0 rgb(253 176 124);
+    line-height: 45px;
+    z-index: 9
+}
+
+.toTop span:hover {
+    background: #efb289
+}
+
+.toTop span::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 7.5px);
+    top: calc(50% - 14px);
+    width: 0;
+    height: 15px;
+    border: 7px solid transparent;
+    border-top: 10px solid #f6f6f6;
+    transform: rotate(180deg)
+}
+
+.pulse-button {
+    width: 100%;
+}
+
+.chevron-down {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transition: transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    /* Firefox 4 */
+    -webkit-transition: -webkit-transform 0.5s;
+    /* Safari 和 Chrome */
+    -o-transition: -o-transform 0.5s;
+    display: inline-block;
+    padding: 3px 8px;
+    float: right;
+}
+
+.chevron-on {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    /* Firefox 4 */
+    -webkit-transition: -webkit-transform 0.5s;
+    /* Safari 和 Chrome */
+    -o-transition: -o-transform 0.5s;
+    display: inline-block;
+    padding: 3px 8px;
+    float: right;
+}
+
+.collapse-ad {
+    padding: 5px 10px;
+    font-size: 18px;
+    float: left;
+}
+
+#sport-tv {
+    display: block;
+    margin-right: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+    background: #FEB42B;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #feb42bb3;
+    -webkit-animation: pulse 1.5s infinite;
+}
+
+#sport-tv:hover {
+    background: #ffab12;
+    color: #ffeded !important;
+}
+
+#sport-tv .nav-link,
+#service .nav-link {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    70% {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 0 0 15px #c55a5a00;
+    }
+
+    100% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 #c55a5a00;
+    }
+}
+
+.sport-tv-mb {
+    display: none;
+}
+
+.sport-tv-mb img {
+    width: 30px;
+}
+
+.service {
+    display: none;
+}
+
+.cutercounter {
+    width: 70px;
+}
+
+@media (max-width: 992px) {
+    .nav-wrapper {
+        position: relative;
+    }
+
+    .search-wrap {
+        position: absolute !important;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 2;
+    }
+
+    .container {
+        max-width: 100% !important;
+    }
+
+    .container-fluid {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .content-wrap {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .bnr-wrap:nth-child(2) {
+        margin-top: 5px;
+    }
+
+    .bnr-wrap {
+        margin-top: 0;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .container {
+        padding: 0 !important;
+    }
+
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+        display: block;
+    }
+
+    .nav-item-active {
+        display: none;
+    }
+
+    .navbar-item {
+        display: none;
+    }
+
+    #tv {
+        position: absolute;
+        left: 10px;
+        top: 8px;
+    }
+
+    .service {
+        display: block;
+    }
+
+    .service .iconfont {
+        font-size: 22px !important;
+    }
+
+    #sport-tv {
+        display: none;
+    }
+
+    .sport-tv-mb {
+        -webkit-animation: pulse 1.5s infinite;
+        text-transform: uppercase;
+        box-shadow: 0 0 0 0 #eb584b78;
+        background: #eb584b;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        z-index: 999;
+        bottom: 144px;
+        right: 24px;
+        display: block;
+    }
+
+    .popular-wrap {
+        margin-bottom: 0;
+    }
+
+    .popular-title {
+        background: none;
+        text-align: left;
+        padding: 0 10px 10px;
+        color: #343635;
+    }
+
+    .popular-list {
+        width: 100%;
+        padding: 20px 0 10px;
+        float: left;
+    }
+
+    .popular-item {
+        width: 31%;
+        margin: 0 0 10px 12px;
+        float: left;
+    }
+
+    .tab-wrap {
+        margin: 0;
+    }
+
+    .tab-content {
+        padding-left: 0;
+    }
+
+    .system-wrap {
+        margin: 0;
+    }
+
+    .e-ad-item {
+        margin-bottom: 0;
+    }
+
+    .e-ad-item img {
+        width: calc(100% / 3);
+        float: left;
+        padding: 5px;
+    }
+
+    .footer li {
+        width: calc(100% / 4);
+    }
+
+    .display-none {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .popular-list {
+        padding: 0 0 10px;
+        float: left;
+    }
+
+    .popular-item {
+        width: 46%;
+        margin: 0 0 10px 10px;
+        float: left;
+    }
+
+    .system-item {
+        width: 46%;
+        margin: 0 0 10px 10px;
+        padding: 10px 6px;
+    }
+
+    .system-list {
+        padding: 0;
+    }
+
+    .bnr-item img {
+        padding: 5px;
+    }
+
+    .banner {
+        padding-right: 0;
+    }
+
+    .tab-col-4 {
+        width: 33%;
+    }
+
+    .footer li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: .5rem;
+        width: calc(100% / 3);
+        float: left;
+    }
+
+    .footer ul {
+        padding: 0;
+    }
+}

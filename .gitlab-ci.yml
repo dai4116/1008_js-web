@@ -1,0 +1,60 @@
+variables:
+  FAFA_PROJECT: fafa88
+
+stages:
+  - RD
+  - MASTER
+
+
+# 確認 CI 機器 資訊
+before_script:
+  - echo 'check CI server info:'
+  - pwd
+  - printenv
+  # - whoami
+  # - uname -a
+  # - git config -l
+
+# ------------------------------------------------------------------------------------------
+# CI Server
+# ------------------------------------------------------------------------------------------
+
+RD:
+  stage: RD
+  variables:
+     HOME_PATH: /home/deploy
+     PROJECT_PATH: /home/jsrw/lin/fafa88/mastertest/
+     OWNER_GROUP: deploy:apache
+     BRANCH: develop
+  tags:
+    - ag
+  script:
+    - echo RD begin
+    - cd $HOME_PATH/$FAFA_PROJECT
+    - git checkout $BRANCH
+    - git pull
+    - chown -R $OWNER_GROUP $HOME_PATH/$FAFA_PROJECT
+    - scp -r $HOME_PATH/$FAFA_PROJECT/* jsrw@139.162.66.243:$PROJECT_PATH
+    - echo RD end
+  only:
+    - 'develop'
+
+MASTER:
+  stage: MASTER
+  variables:
+     HOME_PATH: /home/deploy
+     PROJECT_PATH: /home/jsrw/lin/fafa88/master/
+     OWNER_GROUP: deploy:apache
+     BRANCH: master
+  tags:
+    - ag
+  script:
+    - echo master begin
+    - cd $HOME_PATH/$FAFA_PROJECT
+    - git checkout $BRANCH
+    - git pull
+    - chown -R $OWNER_GROUP $HOME_PATH/$FAFA_PROJECT
+    - scp -r $HOME_PATH/$FAFA_PROJECT/* jsrw@139.162.66.243:$PROJECT_PATH
+    - echo master end
+  only:
+    - 'master'

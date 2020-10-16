@@ -1,0 +1,30 @@
+version: '3'
+networks:
+  app-tier:
+    driver: bridge
+volumes:
+    sql-data:    
+services:
+    nginx:
+        image: daneil780520/nginx-test
+        container_name: nginx
+        ports:
+            - 880:80
+        volumes:
+            - "./:/usr/share/nginx/html/public/"
+            - "./docker:/etc/nginx/conf.d"
+            #- "/c/Users/user/Desktop/test/log/nginx:/var/log/nginx"
+        depends_on: 
+            - php-fpm
+        networks:
+          - app-tier
+    php-fpm:
+        image: daneil780520/docker-test
+        container_name: php-fpm
+        environment:
+            CONTAINER_ROLE: app 
+        volumes:
+            - "./:/var/www/html"
+            #- "/c/Users/user/Desktop/test/php/:/usr/local/etc/php"
+        networks:
+            - app-tier    
