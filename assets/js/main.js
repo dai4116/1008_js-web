@@ -3,7 +3,7 @@ var page = ''
 // Ajax
 async function ajaxSend (type, fileName) {
   return $.ajax({
-    url: `/assets/json/${fileName}.json`,
+    url: `assets/json/${fileName}.json`,
     type: type,
     dataType: 'json' //返回資料格式為json
   });
@@ -23,7 +23,7 @@ function init () {
             bannerHtml.push(`
                 <div class="swiper-slide">
                     <a href="${item.url}" target="_blank">
-                        <img class="swiper-lazy banner d-block w-100" src="../assets/images/a/${item.img}">
+                        <img class="swiper-lazy banner d-block w-100" src="assets/images/a/${item.img}">
                     </a>
                 </div>
             `)
@@ -51,7 +51,7 @@ function init () {
             adHtml.push(`
                 <div class="bnr-item col-md-4 col-3 ${item.key === 'display' ? 'd-none d-md-block' : ''}">
                     <a href="${item.url}" target="_blank">
-                        <img src="../assets/images/b/${item.img}" alt="">
+                        <img src="assets/images/b/${item.img}" alt="">
                     </a>
                 </div>
             `)
@@ -74,7 +74,7 @@ function init () {
             adSubHtml.push(`
                 <div class="bnr-item col-md-4 col-3 ${item.key === 'display' ? 'd-block d-md-none' : '' }">
                     <a href="${item.url}" target="_blank">
-                        <img src="../assets/images/b/${item.img}" alt=""></a>
+                        <img src="assets/images/b/${item.img}" alt=""></a>
                 </div>
             `)
           }
