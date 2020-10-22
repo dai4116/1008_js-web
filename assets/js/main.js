@@ -313,11 +313,11 @@ function popular(data, fileName) {
 function initPopular(item) {
   pagePopular = item
   switch (item) {
-    case 'skinPopular':
-      popular('skin_popular', 'skin')
-      break;
     case 'maintenancePopular':
       popular('maintenance_popular', 'maintenance')
+      break;
+    case 'skinPopular':
+      popular('skin_popular', 'skin')
       break;
     default:
       popular()
@@ -329,11 +329,11 @@ function initPopular(item) {
 function initPage(item) {
   page = item
   switch (item) {
-    case 'skin':
-      content('skin_data', 'skin')
-      break;
     case 'maintenance':
       content('maintenance_data', 'maintenance')
+      break;
+    case 'skin':
+      content('skin_data', 'skin')
       break;
     case 'sunscreen':
       content('sunscreen_data', 'sunscreen')
