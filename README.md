@@ -7,7 +7,7 @@
 
 ### DEMO
 ```
-https://dai4116.github.io/1008_js-web/index.html
+https://dai4116.github.io/BeautyWeb-js/index.html
 ```
 
 ### 簡介
